@@ -66,10 +66,10 @@ public class Stick : MonoBehaviour
         // Destroy the gameObject after clicking on it
         // Destroy(gameObject);
         Debug.Log("OnMouseDown");
-        if(currentStickState == StickState.Push)
-        {
-            GetComponent<Rigidbody>().AddForce(raycastHitPoint * 2, ForceMode.Impulse);
-        }
+        //if(currentStickState == StickState.Push)
+        //{
+        //    GetComponent<Rigidbody>().AddForce(raycastHitPoint * 2, ForceMode.Impulse);
+        //}
 
     }
 
@@ -96,14 +96,22 @@ public class Stick : MonoBehaviour
                     break;
                 case StickState.Push:
 
-                    pushDelta *= 0.09f;
-                    pushSpeed += pushDelta;
-                    if ((transform.localPosition.z + pushDelta * Time.fixedDeltaTime) > -1)
-                    {
-                        transform.localPosition = new Vector3(0, 0, (transform.localPosition.z + pushDelta * Time.fixedDeltaTime));
-                        Debug.Log(transform.localPosition);
-                    }
-                    Debug.Log("Push");
+                    //if (Input.GetMouseButtonDown(0))
+                    //{                                              
+                    //    transform.localPosition = new Vector3(0, 0, transform.localPosition.z + 0.001f); 
+                    //    Debug.Log("Push");
+                    //}
+                    
+                    
+                    //pushDelta *= 0.09f;
+                    //pushSpeed += pushDelta;
+                    //if ((transform.localPosition.z + pushDelta * Time.fixedDeltaTime) > -1)
+                    //{
+                    //    transform.localPosition = new Vector3(0, 0, (transform.localPosition.z + pushDelta));
+
+                    //    Debug.Log(transform.localPosition);
+                    //}
+                    //Debug.Log("Push");
 
                     //transform.localPosition= transform.localPosition- new Vector3(pushDelta * Time.fixedDeltaTime, 0, 0);
                     //transform.localPosition= transform.localPosition- new Vector3(transform.position.x, transform.position.y, transform.position.z + speedPush*Time.fixedDeltaTime);

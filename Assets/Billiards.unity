@@ -255,7 +255,7 @@ Transform:
   - {fileID: 3447291909551643505}
   - {fileID: 1069760714}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &549265832
 MonoBehaviour:
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549265830}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56dbdc4b9b5fd2f4f9011af0d580fedd, type: 3}
   m_Name: 
@@ -418,6 +418,56 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!1 &696824619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 696824620}
+  - component: {fileID: 696824621}
+  m_Layer: 0
+  m_Name: PivionCueStick2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &696824620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696824619}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1, y: 0.57, z: -0.342}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7158842989173762058}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &696824621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696824619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56dbdc4b9b5fd2f4f9011af0d580fedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastHitPoint: {x: 0, y: 0, z: 0}
+  speedPush: 0
+  pushDelta: 5
+  pushSpeed: 0
+  currentStickState: 0
 --- !u!1 &840153637
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,12 +690,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082394007}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.15000004, y: 1, z: 0.30000007}
+  m_LocalPosition: {x: -0.15000004, y: 2, z: 0.30000007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: -90}
 --- !u!1 &1349533740
 GameObject:
@@ -725,7 +775,7 @@ Transform:
   m_Children:
   - {fileID: 692767717}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 59, z: 0}
 --- !u!114 &1693418668
 MonoBehaviour:
@@ -2001,8 +2051,8 @@ GameObject:
   - component: {fileID: 3625194588216303782}
   - component: {fileID: 7926136357151431327}
   - component: {fileID: 7926136357151431329}
-  - component: {fileID: 7926136357151431328}
   - component: {fileID: 7926136357151431330}
+  - component: {fileID: 7926136357151431331}
   m_Layer: 0
   m_Name: Cue stick2
   m_TagString: Untagged
@@ -2456,13 +2506,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5532911516439577538}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.992, y: 0.1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.049, y: 0, z: 1.332}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 696824620}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7378599708798654226
 Transform:
@@ -2843,23 +2893,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7926136357151431328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5532911516439577538}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56dbdc4b9b5fd2f4f9011af0d580fedd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  raycastHitPoint: {x: 0, y: 0, z: 0}
-  speedPush: 0
-  pushDelta: 5
-  pushSpeed: 0
-  currentStickState: 0
 --- !u!54 &7926136357151431329
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2872,7 +2905,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
@@ -2889,6 +2922,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.508, y: 0.5002824, z: 25.891254}
   m_Center: {x: 0, y: 0.000000014901161, z: -12.708366}
+--- !u!114 &7926136357151431331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5532911516439577538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598528d81dc016441bb4e3df85967c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentStickState: 0
 --- !u!4 &7967766325636020727
 Transform:
   m_ObjectHideFlags: 0
